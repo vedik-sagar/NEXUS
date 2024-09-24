@@ -1,2 +1,2 @@
-#NEXUS
+NEXUS
 Hero Section Code.
