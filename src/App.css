@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10; /* Ensure it appears above everything else */
+}
+
+.flash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  z-index: 10; /* Make sure this is above all other content but below popups if any */
+}
+
+.logo {
+  width: 25%;
+  height: 25%;
+  background-image: url("images/nexus-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 17%;
+  margin-bottom: 20%;
+  /* top: 39%;
+  left: 32%; */
+  /* transform: translate(25%, -50%); */
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+.d-r {
+  background-image: url("images/dragon-right.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.d-l {
+  background-image: url("images/dragon-left.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.nexus_text {
+  background-image: url("images/nexus-text.png");
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 20vh;
+}
